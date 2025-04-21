@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./Css/style.css" rel="Stylesheet">
+    <!--INTERNAL STYLING-->
+    <style>
+        .btn{
+            align-content: center;
+            text-align: center;
+            margin-left: 145px;
+            border-radius: 50px;
+            padding: 10px;
+            border: none;
+            background-color: rgb(240, 14, 108);
+            transition: 0.324s;
+
+        }
+        .btn:hover{
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <!--FORM,LABEL,INPUT,BUTTON-->
+    <div class="container">
+        <form>
+            <!--INLINE STYLING-->
+        <h3 style="text-align: center;color: rgb(234, 66, 136);font-weight: 600;">LOGIN<img class="icon" src="/Images/login.png"></h3>
+        <label for="name" >Name</label>
+        <input type="text" name="Name"  placeholder="Enter your name" id="name" class="input-field">
+        <label for="email">Email</label>
+        <input type="email" name="Email"  placeholder="Enter your email" id="email" class="input-field">
+        <label for="pass">Password</label>
+        <input type="password" name="password"  id="pass" placeholder="Enter your password" class="input-field"><br>
+        <!--SUB CONTAINER-->
+        <div class="sub">
+            <input type="checkbox" name="Remember" value="Remember"> 
+        <label class="remember" style="color: white;">Remember Me</label><br>
+        <a href="#" >Forgot Password ?</a><br>
+        </div>
+        <button type="submit" class="btn">Submit</button><hr style="margin-top: 5px; background-color: orangered;">
+        <!--ICONS INSIDE ANCHOR TAG-->
+        <h5 style="text-align: center;">Or signup using</h5>
+        <div class="signup">
+        <a href="#" ><img class="icons" src="/Images/fb.png"></a>
+        <a href="#"><img class="icons" src="/Images/insta.png"></a>
+        <a href="#"><img class="icons" src="/Images/google.png"></a>
+        <a href="#"><img class="icons" src="/Images/git.png"></a>
+    </div>
+    </div>
+</form>
+</body>
+</html>
